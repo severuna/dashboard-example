@@ -1,0 +1,213 @@
+ @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    height: 1000px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.main {
+    height: 120vh;
+}
+.header {
+    background-color: #ffffff;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3.6rem 2.8rem 7.6rem 2.8rem;
+    width: 20vw;
+}
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 5.4rem;
+}
+.header-logo__title {
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+}
+.header-logo__title span {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #838383;
+}
+.header-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+.header-nav__item {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 5rem;
+    transition: background-color 2s ease;
+    align-items: center;
+    padding: 1.1rem 0.8rem;
+    border-radius: 1.5rem;
+}
+.nav-item__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.header-nav__item-title {
+    color: #9197B3;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+}
+.header-nav__item:hover {
+    background-color: #5932EA;
+}
+.header-nav__item svg {
+  stroke: #838383;
+}
+.header-nav__item:hover svg {
+    stroke: #ffffff;
+}
+.header-nav__item:hover .nav-item__card .header-nav__item-title{
+    color: #ffffff;
+}
+.active .header-nav__item-title, .active svg {
+    stroke: #ffffff;
+    color: #ffffff;
+}
+.header-user {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.header-user__description-name {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+.header-user__description-prof {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.tab-content{
+    padding: 3rem 7rem;
+    width: 80vw;
+    height:fit-content;
+    background-color: rgba(0, 0, 0, .04);
+}
+.tab-content__title {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 5rem;
+}
+.customers {
+    border-radius: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+.customers-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-info__title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+}
+.head-info__subtitle {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #16C098;
+}
+.customers-search {
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-color: #F9FBFF;
+    background-position: 1rem;
+    width: 20rem;
+    height: 3.8rem;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.5rem 4rem ;
+}
+.customers-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.customers-foot__info {
+    font-weight: 500;
+    line-height: 2.1rem;
+    color: #B5B7C0;
+    font-size: 1.4rem;
+}
+.customers-foot__page {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.customers-foot__page-btn {
+    background: #F5F5F5;
+    border: 1px solid #EEEEEE;
+    border-radius: 1rem;
+    color: #404B52;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    transition: all 1.4s ease;
+}
+.customers-foot__page-btn:hover {
+    background-color: #5932EA;
+    color: #ffffff;
+}
+.customers-table {
+    width: 100%;
+    margin: 4rem 0;
+}
+tr {
+    border-bottom: 1px solid #EEEEEE;
+}
+th {
+    color: #B5B7C0;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    padding: 2rem 0;
+}
+td {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #292d32;
+}
+.active-custom {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: #008767;
+    background-color: #16C09861;
+    border: 1px solid #00B087;
+    border-radius: .5rem;
+}
+.inactive-custom {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: #DF0404;
+    background-color: #FFC5C5;
+    border: 1px solid #DF0404;
+    border-radius: .5rem;
+}
